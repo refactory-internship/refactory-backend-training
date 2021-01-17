@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function calculate(callback) {
+        //     for (let index = 0; index < 10000; index++) {
+
+        //     }
+
+        //     callback("hasil");
+        // }
+
+        // function outputCallback(value) {
+        //     console.log(value);
+        // }
+
+        // calculate(outputCallback);
+
+        // const promise = new Promise((resolve, reject) => {
+        //     // resolve('hello');
+
+        //     reject(new Error('error'));
+        // });
+
+        // promise.then((value) => {
+        //     console.log(value);
+        // })
+        //     .catch((e) => {
+        //         console.log(e.message);
+        //     })
+        //     .finally(() => {
+        //         console.log('run');
+        //     });
+        // const promise1 = Promise.resolve(3);
+        // const promise2 = 42;
+        // const promise3 = new Promise(function (resolve, reject) {
+        //     setTimeout(resolve, 100, 'foo');
+        // });
+
+        // Promise.allSettled([promise1, promise2, promise3]).then(function (values) {
+        //     console.log(values);
+        // });
+        // const promise1 = new Promise(function (resolve, reject) {
+        //     setTimeout(resolve, 500, 'one');
+        // });
+
+        // const promise2 = new Promise(function (resolve, reject) {
+        //     setTimeout(resolve, 100, 'two');
+        // });
+
+        // Promise.race([promise1, promise2]).then(function (value) {
+        //     console.log(value);
+        // });
+        const string = Promise.reject('a promise');
+
+        async function hello() {
+            try {
+                const result = await string
+                console.log(result);
+            } catch (error) {
+                console.log(error);
+            }
+
+            return 'hello';
+        }
+
+        console.log(hello());
+
+        /* this is a comment
+This comment syntax is guaranteed to
+work on every compiler */
+
+        // This is also a comment
+        // but it might present portability challenges
+
+    </script>
+</body>
+
+</html>
