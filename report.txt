@@ -1,0 +1,1 @@
+example of sending response in a form of file download
